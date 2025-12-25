@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles with Dark Luxury Theme */
+:root {
+    --color-bg: #050505;
+    --color-bg-secondary: #0a0a0a;
+    --color-text-primary: #F5F5DC;
+    /* Cream */
+    --color-text-secondary: #a0a0a0;
+    --color-gold: #D4AF37;
+    --color-gold-hover: #FFE5B4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Typography Customization */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-gold);
+}
+
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold);
+}
+
+/* Utilities */
+@layer utilities {
+    .text-gold {
+        color: var(--color-gold);
+    }
+
+    .bg-dark {
+        background-color: var(--color-bg);
+    }
+
+    .bg-dark-secondary {
+        background-color: var(--color-bg-secondary);
+    }
+
+    .border-gold {
+        border-color: var(--color-gold);
+    }
+
+    .bg-gold {
+        background-color: var(--color-gold);
+    }
+}
